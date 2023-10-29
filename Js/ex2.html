@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX2</title>
+    <script>
+        //Função
+        function multiplica(a,b)
+        {
+            return a*b
+        }
+        //Função para mostrar o resultado no elemento <p>
+        function mostrarResultado()
+        {
+            var resultado = multiplica(10,5); //Chama a função multiplica com os valores desejados
+            document.getElementById("resultado").innerHTML = "O resultado é: " + resultado; //Altera o texto do elemento <p>
+        }
+    </script>
+</head>
+<body>
+    <p id="resultado">Clique no botão para ver o resultado.</p> <!-- Cria um elemento <p> com um id -->
+    <button onclick="mostrarResultado()">Mostrar resultado</button> <!-- Cria um botão que chama a função mostrarResultado -->
+</body>
+</html>

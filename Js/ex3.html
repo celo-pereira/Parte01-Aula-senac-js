@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id ="relogio"/div>
+    <script>
+        function atualizaRelogio()
+        {
+            let data = new Date()
+            let hora = data.getHours()
+            let minutos = data.getMinutes()
+            let segundos = data.getSeconds()
+
+            document.getElementById("relogio").innerText =`${hora}:${minutos}:${segundos}`
+        }
+        setInterval(atualizaRelogio,1000) // Milisegundos
+        setInterval(alert("oi"), 1)
+    </script>
+</body>
+</html>
